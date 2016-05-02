@@ -55,7 +55,7 @@
 								
 								if (file_exists("images/Dairy/".$Dairy_Img1.".jpg")) {
 									$image= '<img src="images/Dairy/'.$Dairy_Img1.'.jpg" alt="'.$Dairy_Img1.'" id="'.$Dairy_Img1.'">';
-									$AddtoCart1='<button class="Add_to_Cart" onclick="Add_to_Cart('.$Dairy_Name1_NoSpace.','.$Dairy_Price1.')'.'">Add to Cart</button>';
+									$AddtoCart1='<button class="Add_to_Cart" onclick="Add_to_Cart (\''.$Dairy_Name1_NoSpace.'\','.'\''.$Dairy_Price1.'\')">Add to Cart</button>';
 								}
 								else{
 									$image="";
@@ -63,8 +63,7 @@
 								}
 								if (file_exists("images/Dairy/".$Dairy_Img2.".jpg")) {
 									$image2= '<img src="images/Dairy/'.$Dairy_Img2.'.jpg" alt="'.$Dairy_Img2.'" id="'.$Dairy_Img2.'">';
-									$AddtoCart2='<button class="Add_to_Cart" onclick="Add_to_Cart('.$Dairy_Name2_NoSpace.','.$Dairy_Price2.')'.'">Add to Cart</button>';
-								}
+									$AddtoCart2='<button class="Add_to_Cart" onclick="Add_to_Cart (\''.$Dairy_Name2_NoSpace.'\','.'\''.$Dairy_Price2.'\')">Add to Cart</button>';}
 								else{
 									$image2="";
 									$AddtoCart2="";
@@ -87,7 +86,7 @@
 									<p class="note">
 										'.$Dairy_Note1.'<br><br>
 									'.$AddtoCart1.'</p>
-									<p>
+									
 								</td>
 								<td>
 									<p>
@@ -104,8 +103,7 @@
 									<p class="note">
 										'.$Dairy_Note2.'<br><br>
 									'.$AddtoCart2.'</p>
-									<p>
-
+								
 								</td>
 								</tr>
 								';
